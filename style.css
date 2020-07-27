@@ -6,7 +6,7 @@
 
 html{
     font-size: 10px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 a{
@@ -60,7 +60,7 @@ img{
     position: relative;
     display: block;
     width: fit-content;
-    font-size: 64px;
+    font-size: 40px;
     color: black;
     padding-bottom: 10px;
 }
@@ -73,11 +73,11 @@ img{
     width: 0;
     background-color:aqua; 
     /* opacity: 0.5;  */
-    animation: text_reveal_box 1s ease; 
-    animation-delay: 0.5s;
+    /* animation: text_reveal_box 1s ease; 
+    animation-delay: 0.5s; */
 }
 
-#hero h1:nth-child(1) span{
+/* #hero h1:nth-child(1) span{
     animation-delay: 0.5s;
 }
 
@@ -87,16 +87,15 @@ img{
 
 #hero h1:nth-child(3) span{
     animation-delay: 0.5s;
-}
+} */
 
 #hero .action{
     display: inline-block;
-    font-size: 40px;
+    font-size: 20px;
     padding: 10px 30px;
     background-color: transparent;
     color: white;
     border: 2px solid aqua;
-    font-size: 32px;
     letter-spacing: 2.5px;
     font-family: 'Montserrat', sans-serif;
     transition: .3s ease;
@@ -107,7 +106,7 @@ img{
     background-color: aqua;
     color: white;
     border: 2px solid;
-    font-size: 32px;
+    font-size: 20px;
     letter-spacing: 2.5px;
     font-family: 'Montserrat', sans-serif;
     transition: .3s ease background-color;
@@ -119,7 +118,7 @@ img{
     /* text-align: center; */
     max-width: 1500px;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 75px 0;
 }
 
 .section_title{
@@ -132,7 +131,7 @@ img{
 }
 
 #benefits .benefits_top{
-    font-size: 15px;
+    font-size: 10px;
     font-weight: 300;
     text-align: center;
     width: 95%;
@@ -205,7 +204,10 @@ img{
     flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 100px 0;
+    padding-bottom: 0px;
+    padding-top: 0;
+    padding-right: 0px;
+    padding-left: 0px;
 }
 
 #features .features_header h1{
@@ -215,7 +217,7 @@ img{
 
 #features .features_text p{
     padding-bottom: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 #features .all-features{
@@ -223,6 +225,7 @@ img{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding-bottom: 10px;
     
 }
 #features .features_box{
@@ -289,6 +292,65 @@ img{
 #features .features_box:hover .features_img img{
     transform: scale(1.1);
 }
+
+/* footer */
+#footer{
+    background-color: plum;
+}
+
+#footer .footer{
+    min-height: 50px;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+#footer .social_icons{
+    display: flex;
+    margin-bottom: 30px;
+}
+#footer .footer img{
+    height: 45px;
+    width: auto;
+    padding: 10px;
+}
+
+/* end of footer */
+
+/* media for tablet */
+@media only screen and (min-width: 768px){
+    #hero h1{
+        font-size: 64px;
+        padding-bottom: 10px;
+    }
+
+    #hero .action{
+        font-size: 32px;
+    }
+
+    #hero .action:hover{
+    background-color: aqua;
+    color: white;
+    border: 2px solid;
+    font-size: 32px;
+    letter-spacing: 2.5px;
+    font-family: 'Montserrat', sans-serif;
+    transition: .3s ease background-color;
+    }
+
+    #benefits .benefits_bottom .benefits_box{
+        flex-basis: 45%;
+        margin: 2.5%;
+    }
+    #benefits .benefits {
+        padding: 25px 0px;
+    }    
+
+    #benefits .container{
+        min-height: 45vh;
+
+}
+/* end media for tablet */
 
 
 
