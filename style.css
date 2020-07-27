@@ -248,9 +248,9 @@ img{
     border-radius: 5px;
     margin: 10px 5%;
     position: relative;
-    overflow: hidden;
-}
-}
+    overflow: hidden;   
+    }
+
 
 #features .features_text{
     padding: 20px;
@@ -348,21 +348,83 @@ img{
 
     #benefits .container{
         min-height: 45vh;
+    }
+
+    #features .features_box{
+        flex-direction: row;
+        width: 80%
+    }
+
+    #features .features_box:nth-child(even){
+        flex-direction: row-reverse;
+    }
+
+    #features .features_box{
+        height: 400px;
+        margin: 0;
+        width: 90%;
+        border-radius: 0;
+    }
+
+    #features .features_text:nth-child(odd){
+        height: 100%;
+        padding-right: 30px;
+    }
+
+    #features .features_text{
+        height: 100%;
+        padding-left: 30px;
+
+    }
+
+    #features .features_box .features_text{
+        height: 100%;
+
+    }
+
+    #features .features_box .features_img{
+        height: 100%;
+        
+    }
+
+    #features .features_box .features_text h2{
+        font-size: 15px;
+    }
+    #features .features_box .features_text p{
+        font-size: 15px;
+    }
 
 }
 /* end media for tablet */
 
+@media only screen and (min-width:1200px){
+    #benefits .benefits_bottom .benefits_box{
+        flex-basis: 22%;
+        margin: 1.5%;
+    }
+    #benefits .benefits_top{
+        width: 500px;
+        margin: 0 auto;
+    }
+    #benefits .benefits p{
+        font-size: 15px;
+        padding-bottom: 20px;
+    }
 
+    #benefits .benefits h1{
+        padding-top: 40px;
+    }
+    #features .features_box{
+        padding: 30px;
+        margin: 10px 39px;
+        flex-direction: row;
+        flex-basis: 45%;
+        margin: 2.5%;
+    }
 
+    }
 
-
-
-
-
-
-
-
-
+    
 
 
 
