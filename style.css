@@ -1,0 +1,318 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/* hero section --> used for background of first page*/
+
+#hero{
+    background-image: url();
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+
+#hero::after{
+    content: '';
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgb(199, 183, 160);
+    position: absolute;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+#hero .hero{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+
+#hero h1{
+    position: relative;
+    display: block;
+    width: fit-content;
+    font-size: 64px;
+    color: black;
+    padding-bottom: 10px;
+}
+
+#hero h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color:aqua; 
+    /* opacity: 0.5;  */
+    animation: text_reveal_box 1s ease; 
+    animation-delay: 0.5s;
+}
+
+#hero h1:nth-child(1) span{
+    animation-delay: 0.5s;
+}
+
+#hero h1:nth-child(2) span{
+    animation-delay: 0.5s;
+}
+
+#hero h1:nth-child(3) span{
+    animation-delay: 0.5s;
+}
+
+#hero .action{
+    display: inline-block;
+    font-size: 40px;
+    padding: 10px 30px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid aqua;
+    font-size: 32px;
+    letter-spacing: 2.5px;
+    font-family: 'Montserrat', sans-serif;
+    transition: .3s ease;
+    transition-property: background-color, color;
+}
+
+#hero .action:hover{
+    background-color: aqua;
+    color: white;
+    border: 2px solid;
+    font-size: 32px;
+    letter-spacing: 2.5px;
+    font-family: 'Montserrat', sans-serif;
+    transition: .3s ease background-color;
+}
+/* end of hero section */
+
+#benefits .benefits{
+    flex-direction: column;
+    /* text-align: center; */
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.section_title{
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    color: black;
+    margin-bottom: 10px;
+    letter-spacing: 5px;
+}
+
+#benefits .benefits_top{
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    width: 95%;
+    color: black;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+#benefits .benefits_bottom{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* fix alignment of perks */
+/* .benefits_box h2{
+    text-align: left;
+} */
+
+#benefits .benefits_box{
+    flex-basis: 80%;
+    display:flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+/* image to be added later */
+    /* background-image: url();
+    background-size: cover;
+    margin: 10px 5%; */
+    background-color:rgb(199, 183, 160);
+    opacity: 0.7;
+    border-radius: 5px;
+    margin: 10px 5%;
+    position: relative;
+    overflow: hidden;
+}
+
+#benefits .benefits_box h2{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 5px;
+    
+}
+
+#benefits .benefits_box p{
+    font-size: 10px;
+    color:black;
+    text-align: left;
+    
+}
+
+/* to add overlay over image */
+/* #benefits .benefits_box::after{
+    content: '';
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgb(199, 183, 160);
+    position: absolute;
+    opacity: 0.6;
+    z-index: -1;
+} */
+
+#features .features{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#features .features_header h1{
+    padding-top: 10px;
+    margin-bottom: 50px;
+}
+
+#features .features_text p{
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#features .all-features{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+#features .features_box{
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px; */
+    flex-basis: 80%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    background-color: rgb(199, 183, 160);
+    opacity: 0.7;
+    border-radius: 5px;
+    margin: 10px 5%;
+    position: relative;
+    overflow: hidden;
+}
+}
+
+#features .features_text{
+    padding: 20px;
+    flex-basis: 50%;
+    background-color:white;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-color: thistle;
+}
+
+#features .features_img{
+    flex-basis: 50%;
+    height: 300px;
+    overflow: hidden;
+    
+}
+
+/* to add overlay over image */
+/* #features .features_img::after{
+    content: '';
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgb(151, 129, 136);
+    position: absolute;
+    opacity: 0.6;
+    z-index: -1;
+}  */
+
+#features .features_img img{
+    transition: 0.3s ease transform;
+}
+
+#features .features_box:hover .features_img img{
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* keyframes */
+@keyframes text_reveal_box{
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left:100%;
+    }
+}
+/* end of keyframes */
