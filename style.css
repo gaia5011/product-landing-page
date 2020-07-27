@@ -71,7 +71,7 @@ img{
     left: 0;
     height: 100%;
     width: 0;
-    background-color:aqua; 
+    background-color:#98e6e6; 
     /* opacity: 0.5;  */
     /* animation: text_reveal_box 1s ease; 
     animation-delay: 0.5s; */
@@ -95,7 +95,7 @@ img{
     padding: 10px 30px;
     background-color: transparent;
     color: white;
-    border: 2px solid aqua;
+    border: 2px solid #98e6e6;
     letter-spacing: 2.5px;
     font-family: 'Montserrat', sans-serif;
     transition: .3s ease;
@@ -103,7 +103,7 @@ img{
 }
 
 #hero .action:hover{
-    background-color: aqua;
+    background-color: #98e6e6;
     color: white;
     border: 2px solid;
     font-size: 20px;
@@ -164,7 +164,8 @@ img{
     /* background-image: url();
     background-size: cover;
     margin: 10px 5%; */
-    background-color:rgb(199, 183, 160);
+    /* background-color:rgb(199, 183, 160); */
+    background-color: #c6d3dd;
     opacity: 0.7;
     border-radius: 5px;
     margin: 10px 5%;
@@ -261,7 +262,8 @@ img{
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    background-color: thistle;
+    background-color: #ddcec6;
+    /* background-color: #c6d3dd; */
 }
 
 #features .features_img{
@@ -295,7 +297,7 @@ img{
 
 /* footer */
 #footer{
-    background-color: plum;
+    background-color:#c6d3dd;
 }
 
 #footer .footer{
@@ -329,7 +331,7 @@ img{
     }
 
     #hero .action:hover{
-    background-color: aqua;
+    background-color:#98e6e6;
     color: white;
     border: 2px solid;
     font-size: 32px;
